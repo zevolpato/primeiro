@@ -28,24 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Soma = new System.Windows.Forms.Button();
+            this.btnSoma = new System.Windows.Forms.Button();
             this.txtN1 = new System.Windows.Forms.TextBox();
             this.txtN2 = new System.Windows.Forms.TextBox();
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnMultiplicacao = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Soma
+            // btnSoma
             // 
-            this.Soma.Location = new System.Drawing.Point(101, 136);
-            this.Soma.Name = "Soma";
-            this.Soma.Size = new System.Drawing.Size(100, 23);
-            this.Soma.TabIndex = 0;
-            this.Soma.Text = "Soma";
-            this.Soma.UseVisualStyleBackColor = true;
-            this.Soma.Click += new System.EventHandler(this.button1_Click);
+            this.btnSoma.Location = new System.Drawing.Point(101, 136);
+            this.btnSoma.Name = "btnSoma";
+            this.btnSoma.Size = new System.Drawing.Size(100, 23);
+            this.btnSoma.TabIndex = 0;
+            this.btnSoma.Text = "Soma";
+            this.btnSoma.UseVisualStyleBackColor = true;
+            this.btnSoma.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtN1
             // 
@@ -97,18 +98,29 @@
             this.label3.Text = "Resultado";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // btnMultiplicacao
+            // 
+            this.btnMultiplicacao.Location = new System.Drawing.Point(103, 173);
+            this.btnMultiplicacao.Name = "btnMultiplicacao";
+            this.btnMultiplicacao.Size = new System.Drawing.Size(97, 21);
+            this.btnMultiplicacao.TabIndex = 5;
+            this.btnMultiplicacao.Text = "Multiplicação";
+            this.btnMultiplicacao.UseVisualStyleBackColor = true;
+            this.btnMultiplicacao.Click += new System.EventHandler(this.btnMultiplicacao_Click);
+            // 
             // Calculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnMultiplicacao);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.txtN2);
             this.Controls.Add(this.txtN1);
-            this.Controls.Add(this.Soma);
+            this.Controls.Add(this.btnSoma);
             this.Name = "Calculos";
             this.Text = "Soma";
             this.ResumeLayout(false);
@@ -118,13 +130,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Soma;
+        private System.Windows.Forms.Button btnSoma;
         private System.Windows.Forms.TextBox txtN1;
         private System.Windows.Forms.TextBox txtN2;
         private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnMultiplicacao;
     }
 }
 

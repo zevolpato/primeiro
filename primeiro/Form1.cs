@@ -38,5 +38,17 @@ namespace primeiro
             rst = n1 + n2;
             txtResultado.Text = rst.ToString(); 
         }
+
+        private void btnMultiplicacao_Click(object sender, EventArgs e)
+        {
+            double n1;
+            double n2;
+            double rst;
+
+            n1 = double.Parse(txtN1.Text);
+            n2 = double.Parse(txtN2.Text);
+            rst = n1 * n2;
+            txtResultado.Text = rst.ToString();
+        }
     }
 }
